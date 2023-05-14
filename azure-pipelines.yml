@@ -5,9 +5,18 @@
 
 trigger:
 - main
+strategy:
+  matrix:
+    linux:
+      imagename: ubuntu-latest
+    mac:
+      imagename: mac-latest
+    windows:
+      imagename: windows-latest
 
+  maxParallel: 3
 pool:
-  vmImage: ubuntu-latest
+  vmImage: $(imagename)
 
 steps:
 - task: NodeTool@0
