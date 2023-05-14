@@ -10,7 +10,7 @@ strategy:
     linux:
       imagename: ubuntu-latest
     mac:
-      imagename: mac-latest
+      imagename: macOS-latest
     windows:
       imagename: windows-latest
 
